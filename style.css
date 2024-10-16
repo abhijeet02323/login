@@ -1,0 +1,229 @@
+/* General Page Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    background-image: url('3409297.jpg'); /* Replace with your image file path */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* Keeps the background fixed while scrolling */
+}
+
+/* Transparent Login Container */
+.container {
+    display: grid;
+    flex-direction: row; /* Aligns content in column layout */
+    justify-content: center;
+    align-items: center; /* Centers content */
+    background-color: rgba(172, 131, 131, 0.5); /* Adjust transparency here */
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    backdrop-filter: blur(10px); /* Frosted glass effect */
+    -webkit-backdrop-filter: blur(10px); /* Frosted glass for Safari */
+    width: 350px;
+    text-align: center;
+    border: 1px solid rgba(255, 255, 255, 0.753); /* Soft border to enhance transparency */
+    transition: background-color 0.5s ease; /* Smooth transition for transparency */
+}
+
+/* Change transparency on hover */
+.container:hover {
+    background-color: rgba(255, 255, 255, 0.842); /* More solid on hover */
+}
+
+/* Heading Styles */
+h2 {
+    color: #ffffff;
+    margin-bottom: 40px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: xx-large;
+    font-weight: bolder;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* Form Labels and Inputs */
+form label {
+    display: block;
+    text-align: left;
+    margin-bottom: 5px;
+    color: #ddd; /* Light text color */
+}
+
+form input[type="text"],
+form input[type="password"],
+form input[type="email"],
+form input[type="submit"],
+form input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 5px;
+    box-sizing: border-box;
+    background-color: rgba(255, 255, 255, 0.9); /* Slightly opaque background for inputs */
+    color: #fc0505;
+}
+
+/* Submit Button */
+form input[type="submit"] {
+    background-color: #07f107;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form input[type="submit"]:hover {
+    background-color: #04f504;
+}
+
+/* Link Styling */
+p a {
+    color: #fff;
+    text-decoration: none;
+}
+
+p a:hover {
+    text-decoration: underline;
+}
+
+/* Error and Success Messages */
+.error {
+    color: red;
+    margin-bottom: 10px;
+}
+
+.success {
+    color: rgb(3, 27, 248);
+    margin-bottom: 10px;
+}
+
+/* Welcome Page Styling */
+.welcome-msg {
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.logout-btn {
+    background-color: #d9534f;
+    padding: 10px 20px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.logout-btn:hover {
+    background-color: #c9302c;
+}
+
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Styles */
+header {
+    background-color: #000000;  
+    width: 100%;
+    position: top, center;
+    padding: 20px;
+    display: grid;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 50px;
+    height: auto;
+    margin-right: 15px;
+}
+
+header h1 {
+    
+    font-family: 'Playfair Display', serif;
+    font-size: 24px;
+    margin: 0;
+    color: #e70707;
+    width: 100%;
+
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #007BFF;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #000000;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+footer nav ul {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+
+footer nav ul li {
+    margin: 0 15px;
+}
+
+footer nav ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+footer nav ul li a:hover {
+    color: #007BFF;
+}
+
+footer p {
+    margin: 10px 0;
+}
+
+
+/* Mobile Responsiveness */
+@media (max-width: 600px) {
+    .container {
+        width: 90%; /* Makes container width responsive */
+    }
+}
